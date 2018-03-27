@@ -6,7 +6,8 @@ class OrbitzHomePage
 
   page_url 'www.orbitz.com'
 
-  link(:select_flight_tab, :id => 'tab-flight-tab')
+  # link(:select_flight_tab, :id => 'tab-flight-tab')
+  button(:select_flight_tab, :id => 'tab-flight-tab-hp')
   label(:select_round_trip_option, :id => 'flight-type-roundtrip-label')
   text_field(:departure_airport, :id => 'flight-origin')
   text_field(:arrival_airport, :id => 'flight-destination')
@@ -88,7 +89,7 @@ class OrbitzHomePage
   end
 
   def search_for_future_flights
-    select_flight_tab
+    select_flight_tab_element.click
     select_round_trip_option_element.click
     select_dep_airport "Columbus", "Columbus, OH"
     select_arr_airport "Boston", "Boston, MA"

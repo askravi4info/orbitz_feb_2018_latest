@@ -3,7 +3,7 @@ Given(/^user is on orbitz home page$/) do
 end
 
 When(/^user selects the flights tab$/) do
-  on(OrbitzHomePage).select_flight_tab
+  on(OrbitzHomePage).select_flight_tab_element.click
 end
 
 And(/^user choose the round trip option$/) do
