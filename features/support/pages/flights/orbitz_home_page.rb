@@ -26,7 +26,12 @@ class OrbitzHomePage
     #     break
     #   end
     # end
-    # fail "#{message} not found in the list" if x == false
+    # fail "#{messfad
+    # fd
+    # saf
+    # dsDfd
+    # sf
+    # dsfage} not found in the list" if x == false
     # ***************
     all_messages = []
     warning_messages_element.lis.each do |each_msg|
