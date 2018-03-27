@@ -12,7 +12,7 @@ Feature: Orbitz Flight Search Functionality
     And user searches for the available future flights
     Then verify the search results are related to Boston airport
 
-@release
+  @release
   Scenario Outline: verify the user is able to search for the available flights for the future dates with different set of data
     When user selects the flights tab
     And user choose the round trip option
@@ -26,7 +26,7 @@ Feature: Orbitz Flight Search Functionality
       | Columbus, OH | Columbus      | Boston, MA  | Boston        |
       | Columbus, OH | Columbus      | Chicago, IL | Chicago       |
 
-@smoke
+  @smoke
   Scenario: verify the user is able to search for the available flights for the future dates with declarative style
     When user searches for the future available flights
     Then verify the search results are related to Boston airport
@@ -39,15 +39,17 @@ Feature: Orbitz Flight Search Functionality
     And user selects Boston, MA airport for the city Boston from the arrival edit box
     And user searches for the available past flights
     Then verify user is warned with the following
-      | messages                                                            |
+      | messages                                                             |
       | Departing date is in the past. Please enter a valid departing dates. |
-      | Returning date is in the past. Please enter a valid returning date. |
+      | Returning date is in the past. Please enter a valid returning date.  |
 
 
   Scenario: verify the flights are displayed with the sort order of price
     When user searches for the future available flights
     Then verify the search results are related to Boston airport
     And verify the flights are displayed with the sort order of price
-    
+
   Scenario: testing the yml functionality
     Then verify the user is able to access data from yml file
+
+  Scenario: last scenario
