@@ -1,4 +1,5 @@
 default: --no-source --color --format pretty --format html --out report.html --tags @regression
+cars: --no-source --color --format pretty --format html --out report.html --tags @cars
 qa_smoke: --no-source --color --format pretty --format html --out report.html --tags @smoke
 qa_regression: --no-source --color --format pretty --format html --out report.html --tags @regression
 fast: --no-source --color --format pretty --format html --out report.html --tags @regression
